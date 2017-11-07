@@ -1,0 +1,13 @@
+# OASIS_START
+# DO NOT EDIT (digest: 1054baf97abcfa12920e4ecfee51f2dd)
+version = "0.1"
+description =
+"An experiment to implement different type systems in the same framework"
+requires = "Sig"
+archive(byte) = "lambda.cma"
+archive(byte, plugin) = "lambda.cma"
+archive(native) = "lambda.cmxa"
+archive(native, plugin) = "lambda.cmxs"
+exists_if = "lambda.cma"
+# OASIS_STOP
+

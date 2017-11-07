@@ -1,0 +1,12 @@
+# OASIS_START
+# DO NOT EDIT (digest: 8e6083422bd60e97cfbc9d519078e285)
+version = "0.1"
+description =
+"An experiment to implement different type systems in the same framework"
+archive(byte) = "Sig.cma"
+archive(byte, plugin) = "Sig.cma"
+archive(native) = "Sig.cmxa"
+archive(native, plugin) = "Sig.cmxs"
+exists_if = "Sig.cma"
+# OASIS_STOP
+
