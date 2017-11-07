@@ -1,0 +1,28 @@
+OASISFormat: 0.4
+Name: type-systems-framework
+Version: 0.1
+Synopsis: An experiment to implement different type systems in the same framework
+Authors: François Thiré <francois.thire@lsv.fr>
+License: GPL
+
+BuildTools: ocamlbuild
+Plugins: META (0.4), DevFiles (0.4)
+
+Library "Sig"
+  Path: src/base
+  Modules:
+    Sig
+
+Library "lambda"
+  Path: src/lambda
+  Modules:
+    Lambda
+  BuildDepends:
+    Sig
+
+Executable "tps"
+  Path: src/
+  MainIs: main.ml
+  CompiledObject: best
+  BuildDepends:
+    lambda
